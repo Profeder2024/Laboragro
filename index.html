@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador Torre Hidropônica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Torre Hidropônica Inteligente</h1>
+
+<div class="painel">
+
+<div>
+<label>Fluxo de Água</label>
+<input type="range" id="fluxo" min="0" max="100" value="80">
+<span id="fluxoValor">80</span>
+</div>
+
+<div>
+<label>pH</label>
+<input type="range" id="ph" min="0" max="14" step="0.1" value="6.2">
+<span id="phValor">6.2</span>
+</div>
+
+<div>
+<label>TDS</label>
+<input type="range" id="tds" min="0" max="2000" value="900">
+<span id="tdsValor">900</span>
+</div>
+
+</div>
+
+<div id="status">
+Sistema Operando Normalmente
+</div>
+
+<div class="torre">
+
+<div class="tubo-central">
+<div class="agua-subindo"></div>
+</div>
+
+<div class="agua-topo"></div>
+
+<div id="alfaces"></div>
+
+</div>
+
+<audio id="alarme">
+<source src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
